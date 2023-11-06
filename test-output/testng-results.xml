@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-06T09:48:52 GMT" name="Suite1" finished-at="2023-11-06T09:49:18 GMT" duration-ms="26216">
+    <groups>
+    </groups>
+    <test started-at="2023-11-06T09:48:52 GMT" name="TestNGPractice-Chrome" finished-at="2023-11-06T09:49:18 GMT" duration-ms="26216">
+      <class name="tests.DaftTests">
+        <test-method is-config="true" signature="initSuite(java.lang.String,java.lang.String)[pri:0, instance:tests.DaftTests@34a3d150]" started-at="2023-11-06T09:48:52 GMT" name="initSuite" finished-at="2023-11-06T09:48:52 GMT" duration-ms="58" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initSuite -->
+        <test-method is-config="true" signature="initDriver()[pri:0, instance:tests.DaftTests@34a3d150]" started-at="2023-11-06T09:48:52 GMT" name="initDriver" finished-at="2023-11-06T09:48:59 GMT" duration-ms="7196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method signature="performDaftTest(int,java.util.Map)[pri:0, instance:tests.DaftTests@34a3d150]" started-at="2023-11-06T09:48:59 GMT" name="performDaftTest" data-provider="getData" finished-at="2023-11-06T09:49:17 GMT" duration-ms="18105" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{searchinput=dublin, keyword=garage}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- performDaftTest -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:tests.DaftTests@34a3d150]" started-at="2023-11-06T09:49:17 GMT" name="cleanUp" finished-at="2023-11-06T09:49:18 GMT" duration-ms="742" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- tests.DaftTests -->
+    </test> <!-- TestNGPractice-Chrome -->
+  </suite> <!-- Suite1 -->
+</testng-results>
