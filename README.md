@@ -17,8 +17,7 @@ Before you begin, make sure you have the following installed on your system:
   
 2. Install Dependencies
 Use Maven to download the project's dependencies.
-
-mvn clean install
+run mvn clean install
 3. Download Chrome or Firefox browser
 
 ## Project Configuration
