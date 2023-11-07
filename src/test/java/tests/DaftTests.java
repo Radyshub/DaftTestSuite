@@ -20,15 +20,11 @@ public class DaftTests extends TestBase {
             search = new DaftSearch(getDriver());
 
             int propertyCount = search.getSearchPropertyResults();
-            Assert.assertEquals(propertyCount >0, true, "Zero Search Result not expected");
-
+            Assert.assertTrue(propertyCount >0,"Zero Search Result not expected");
             search.setFilterKeyword(data.get("keyword"));
             int filterCount = search.getFilterResultCount();
-            Assert.assertEquals( filterCount >0, true, "Zero Filtered Result not expected");
-
-            Assert.assertEquals(search.performSearchByFilterAndViewPropertyDesc().contains(data.get("keyword")),true,
-                    data.get("keyword").toUpperCase() + " not found in property description");;
-
+            Assert.assertTrue(filterCount >0,"Zero Filtered Result not expected" );
+            Assert.assertTrue(search.performSearchByFilterAndViewPropertyDesc().toLowerCase().contains(data.get("keyword")),data.get("keyword").toUpperCase() + " not found in property description" );
         }catch(Exception e){
             e.printStackTrace();
         }
